@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel='stylesheet' href='css/home.css'>
+</head>
+
+<body>
+<div th:replace="layout/header :: header"></div>
+    <img src="image/listWeb.png" class="sizeGia" alt="">
+    <div class="center">
+        <h1 class="title">Danh sách các mẫu trang web</h1>
+        <div class="listWeb">
+
+
+
+            <div th:each="product: ${products}" class="item" >
+                <image class="sizeGia"  th:src="${product.image}" ></image>
+
+                <br> <br> 
+                <h4 th:text="${product.name}" ></h4>
+                <h4 th:text="${product.price}" ></h4>
+                <br>
+                <button type="button" class="btn btn-primary">Mua ngay</button>
+            </div>
+
+
+        </div>
+    </div>
+    <img src="image/sizeGia.png" class="sizeGia" alt="">
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+</html>

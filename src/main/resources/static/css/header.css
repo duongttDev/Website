@@ -1,0 +1,16 @@
+.logo{
+    width: 50%;
+    height: 50%;
+    border-radius: 40px;
+}
+
+.navbar{
+    font-size: 30px;
+}
+.navbar-collapse{
+    margin-left: 40%;
+}
+.sizeGia{
+    max-width:100%;
+max-height:100%;
+}
