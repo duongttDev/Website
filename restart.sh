@@ -1,6 +1,7 @@
+#!/bin/bash
 echo stop application
-source stop.sh
+. stop.sh
 echo build application
-source build.sh
+. build.sh
 echo start application
-source start.sh
+. start.sh
